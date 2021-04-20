@@ -41,7 +41,7 @@ if __name__ == "__main__":
     parser.add_argument("-port", default="3647", help="The port the server should be bound to.")
     args = parser.parse_args()
     
-    HOST, PORT = args.ip, args.port
+    HOST, PORT = args.ip, int(args.port)
 
     # Create the server, binding to localhost on port 3647
     with socketserver.TCPServer((HOST, PORT), CommandTCPHandler) as server:
