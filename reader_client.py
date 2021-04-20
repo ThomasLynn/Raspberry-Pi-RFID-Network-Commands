@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 
-# takes -ip and -port arguments for the target server's ip+port
-# waits for a tag to be presented to the rfid scanner
-# sends the text data on the rfid to the server
+# Takes -ip and -port arguments for the target server's ip+port.
+# Waits for a tag to be presented to the rfid scanner.
+# Sends the text data on the rfid to the server.
 
 import RPi.GPIO as GPIO
 from mfrc522 import SimpleMFRC522

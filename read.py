@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-# waits for a tag to be presented to the scanner
-# then prints the tag id and tag text to the screen
+# Waits for a tag to be presented to the scanner,
+# then prints the tag id and tag text to the screen.
 
 import RPi.GPIO as GPIO
 from mfrc522 import SimpleMFRC522

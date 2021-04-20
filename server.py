@@ -3,6 +3,26 @@ import subprocess
 import shlex
 import argparse
 
+# Takes text data from the client and runs that text as a command
+
+# WARNING: This is super-duper NOT secure. anyone with a little
+# technical know-how on your local network will be able to run
+# any command they want on your computer while this server is running.
+# Use at your own risk.
+
+# NOTE: Your firewall and your router's firewall will stop anyone from
+# accessing this server from outside your network by default.
+# I strongly advise you do NOT let people outside your network run
+# any command they want on your machine
+
+# NOTE2: To be able to connect to this server from another computer on
+# your network, you must bind your local ip address with the -ip <ip>
+# argument.
+# To get your local ip address, go to your command line and type
+# ipconfig (windows)
+# ifconfig (linux)
+# and find your ipv4 (or ipv6) address.
+
 class CommandTCPHandler(socketserver.BaseRequestHandler):
 
     def handle(self):

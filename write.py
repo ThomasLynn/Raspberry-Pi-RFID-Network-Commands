@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# type some text data, then present a tag to the scanner
+# Type some text data, then present a tag to the scanner
 # to write that data to it.
 
 import RPi.GPIO as GPIO
